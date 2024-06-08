@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { AppointmentsModule } from './appointments/module/appointments.module';
-import { PatientsModule } from './patients/module/patients.module';
-import { DoctorsModule } from './doctors/module/doctors.module';
-import { AppointmentTypesModule } from './appointment-types/module/appointment-types.module';
+import { AppointmentsModule } from './components/appointments/module/appointments.module';
+import { PatientsModule } from './components/patients/infrastructure/module/patients.module';
+import { DoctorsModule } from './components/doctors/infrastructure/module/doctors.module';
+import { AppointmentTypesModule } from './components/appointment-types/module/appointment-types.module';
 import { FirebaseModule } from './firebase/module/firebase.module';
 
 @Module({
